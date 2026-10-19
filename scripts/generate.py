@@ -242,8 +242,11 @@ Do not clone, build or run anything from this repository.
    For Cline, add `"type": "streamableHttp"` next to `url`. Ready-made files for other clients are in `configs/`.
 4. Verify by listing tools. Expect {", ".join(f"`{tool_name(t)}`" for t in s0['tools'])}
    plus Apify helper tools (`get-actor-run`, `get-dataset-items`, `get-key-value-store-record`, `abort-actor-run`).
-5. Every tool call is billed per result to the user's Apify account. Ask before large runs, and pass
-   `callOptions.maxTotalChargeUsd` to cap the spend of a single call.
+5. Every tool call is billed per result to the user's Apify account. Ask before large runs. The per-Actor
+   tools above take only the Actor input and have no spend-cap argument. To cap the spend of a single run,
+   add `call-actor` to the URL's `tools=` list and call it with the Actor name, its `input`, and
+   `callOptions.maxTotalChargeUsd`. `call-actor` returns the run status and dataset ID; read the rows with
+   `get-dataset-items`.
 6. HTTP 401 means the token is missing or invalid.
 """
     write("llms-install.md", body)

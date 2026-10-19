@@ -23,7 +23,7 @@ Wrenfield Data publishes data tools as [Apify Actors](https://apify.com/wrenfiel
 
 - **No server to run.** Apify hosts the MCP endpoint and runs the tools.
 - **Pay per result.** Each tool charges for the results it returns, billed to your Apify account. Some tools add a small per-run or per-request fee, listed in the tables below. There's no subscription, and you don't need third-party API keys. The Apify Free plan includes a monthly usage credit.
-- **Capped spend.** Agents can pass `callOptions.maxTotalChargeUsd` on any call. REST callers can use the `maxTotalChargeUsd` query parameter.
+- **Capped spend.** The per-Actor tools in these suites take only the Actor's input, so they have no spend-cap argument. To cap a single run from an agent, add Apify's generic `call-actor` tool to the suite URL and pass `callOptions.maxTotalChargeUsd` ([details](#using-the-tools-from-an-agent)). REST callers can use the `maxTotalChargeUsd` query parameter.
 - **Also a plain API.** Every tool is a normal Apify Actor you can call over REST, from Python or Node, or from n8n/Make/Zapier ([examples](#rest-python-and-node)).
 
 | Suite | For | Endpoint |
@@ -251,7 +251,7 @@ On plans and workspaces where custom MCP connectors (developer mode) are enabled
 ### Using the tools from an agent
 
 - Each suite also loads Apify's helper tools `get-actor-run`, `get-dataset-items`, `get-key-value-store-record` and `abort-actor-run`. If a long run doesn't finish within the call, fetch its results with `get-dataset-items`.
-- Cap spend per call with `callOptions.maxTotalChargeUsd`.
+- Spend caps: the per-Actor tools (for example `wrenfield-data--keyword-search-volume`) accept only the Actor's input and don't expose `callOptions`, so they can't cap spend per call. To cap a run, add `call-actor` to the URL's `tools=` list (for example `?tools=call-actor,wrenfield-data/keyword-search-volume`) and call it with `actor: "wrenfield-data/keyword-search-volume"`, the Actor input in `input`, and `callOptions: { "maxTotalChargeUsd": 1 }`. `call-actor` returns the run status and storage IDs, not the rows; read them with `get-dataset-items`.
 - Results are JSON rows with stable field names. Each Actor's Store page documents its input and output schema.
 - Optional: add `&telemetry-enabled=false` to a URL to opt out of Apify MCP telemetry.
 
