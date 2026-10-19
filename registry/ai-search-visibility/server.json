@@ -1,0 +1,50 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.wrenfielddata/ai-search-visibility",
+  "title": "Wrenfield AI Search Visibility",
+  "description": "Track brand mentions, share of voice and cited URLs in ChatGPT, Perplexity, Gemini and AI Overviews.",
+  "version": "1.0.0",
+  "websiteUrl": "https://wrenfielddata.com",
+  "repository": {
+    "url": "https://github.com/wrenfielddata/wrenfield-mcp",
+    "source": "github",
+    "subfolder": "registry/ai-search-visibility"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/wrenfielddata/wrenfield-mcp/main/assets/suites/ai-search-visibility.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "400x400"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. 'Bearer <Apify API token>' from Apify Console > Settings > API & Integrations. Omit to sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "host": "Apify MCP server (mcp.apify.com)",
+      "tools": [
+        "wrenfield-data--ai-search-visibility-tracker",
+        "wrenfield-data--keyword-search-volume"
+      ],
+      "pricing": "Pay per result on Apify; no subscription",
+      "apifyStore": [
+        "https://apify.com/wrenfield-data/ai-search-visibility-tracker",
+        "https://apify.com/wrenfield-data/keyword-search-volume"
+      ]
+    }
+  }
+}

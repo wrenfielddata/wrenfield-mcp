@@ -1,0 +1,114 @@
+{
+  "owner": "wrenfield-data",
+  "mcpBase": "https://mcp.apify.com",
+  "registryNamespace": "io.github.wrenfielddata",
+  "repo": "https://github.com/wrenfielddata/wrenfield-mcp",
+  "website": "https://wrenfielddata.com",
+  "version": "1.0.0",
+  "suites": [
+    {
+      "id": "seo-data",
+      "key": "wrenfield-seo",
+      "title": "Wrenfield SEO Data",
+      "registryTitle": "Wrenfield SEO Data",
+      "description": "Keyword search volume, CPC, domain authority, organic traffic, Google Trends and competitor ads.",
+      "icon": "keyword-search-volume",
+      "tools": [
+        "keyword-search-volume",
+        "domain-authority-traffic-checker",
+        "google-trends-scraper",
+        "google-ads-transparency-scraper"
+      ],
+      "comingSoon": [
+        "keyword-research-tool",
+        "seo-toolkit",
+        "competitor-keywords",
+        "keyword-difficulty-checker",
+        "google-autocomplete-keyword-expander",
+        "people-also-ask-scraper",
+        "google-rank-tracker",
+        "bulk-pagespeed-checker",
+        "amazon-keyword-research"
+      ]
+    },
+    {
+      "id": "ai-search-visibility",
+      "key": "wrenfield-ai-search",
+      "title": "Wrenfield AI Search Visibility",
+      "registryTitle": "Wrenfield AI Search Visibility",
+      "description": "Track brand mentions, share of voice and cited URLs in ChatGPT, Perplexity, Gemini and AI Overviews.",
+      "icon": "ai-search-visibility-tracker",
+      "tools": [
+        "ai-search-visibility-tracker",
+        "keyword-search-volume"
+      ],
+      "comingSoon": [
+        "ai-answer-scraper",
+        "people-also-ask-scraper",
+        "google-rank-tracker"
+      ]
+    },
+    {
+      "id": "local-leads",
+      "key": "wrenfield-leads",
+      "title": "Wrenfield Local Leads",
+      "registryTitle": "Wrenfield Local Leads",
+      "description": "Company websites to emails, phones, socials and tech stack; company names to official domains.",
+      "icon": "google-maps-grid-rank-tracker",
+      "tools": [
+        "website-contact-scraper",
+        "website-tech-stack-detector",
+        "company-name-to-domain"
+      ],
+      "comingSoon": [
+        "businesses-without-websites",
+        "google-maps-grid-rank-tracker",
+        "bulk-pagespeed-checker"
+      ]
+    }
+  ],
+  "more": [
+    "sec-form-d-scraper",
+    "ats-jobs-api",
+    "google-jobs-scraper",
+    "google-shopping-price-comparison",
+    "walmart-product-scraper",
+    "home-depot-lowes-scraper",
+    "shopify-store-scraper",
+    "tripadvisor-reviews-scraper",
+    "youtube-transcript-scraper",
+    "telegram-channel-scraper"
+  ],
+  "summaries": {
+    "keyword-search-volume": "Google Keyword Planner search volume, CPC, competition and 12-month trend per keyword, plus keyword ideas",
+    "domain-authority-traffic-checker": "Domain rank, backlinks, referring domains, spam score and estimated organic/paid traffic, in bulk",
+    "google-trends-scraper": "Interest over time and by region, related queries and topics, and Trending Now by country",
+    "google-ads-transparency-scraper": "A competitor's Google ads from the Ads Transparency Center: text, images, videos, regions, dates",
+    "ai-search-visibility-tracker": "Per prompt and AI engine: answer text, brand mention and rank, sentiment, cited URLs, share of voice",
+    "website-contact-scraper": "Emails, phone numbers and social profiles from a list of company websites, one row per site",
+    "website-tech-stack-detector": "CMS, ecommerce platform, analytics, ad pixels, hosting, CDN and email provider for any site",
+    "company-name-to-domain": "Official website domain for each company name, with confidence score, LinkedIn URL and logo",
+    "sec-form-d-scraper": "SEC EDGAR Form D filings: companies that just raised money, with amounts, executives and contacts",
+    "ats-jobs-api": "Jobs from Greenhouse, Lever, Ashby, Workday, Workable and SmartRecruiters in one schema",
+    "google-jobs-scraper": "Google Jobs listings by keyword and location, with parsed salary and apply links",
+    "google-shopping-price-comparison": "Google Shopping offers per product (price, shipping, seller, stock) by keyword, barcode or URL",
+    "walmart-product-scraper": "Walmart products: price, was-price, stock, seller, UPC, variants and reviews",
+    "home-depot-lowes-scraper": "Home Depot and Lowe's products with local store price, in-store stock and aisle",
+    "shopify-store-scraper": "Any Shopify store's products and variants, with a monitor mode that returns only changes",
+    "tripadvisor-reviews-scraper": "Tripadvisor reviews for hotels, restaurants and attractions",
+    "youtube-transcript-scraper": "YouTube transcripts as text, timestamped segments, SRT/VTT or RAG-ready chunks",
+    "telegram-channel-scraper": "Public Telegram channel posts with views, reactions and media, no login",
+    "keyword-research-tool": "Keyword ideas with volume, CPC, keyword difficulty, intent and SERP features in one row",
+    "seo-toolkit": "Domain overview, ranked keywords, competitors, backlinks and live SERPs in one Actor",
+    "competitor-keywords": "Every keyword a domain or page ranks for, with position, volume and estimated traffic",
+    "keyword-difficulty-checker": "Bulk keyword difficulty (0-100) and search intent",
+    "google-autocomplete-keyword-expander": "Long-tail keyword ideas from Google and YouTube Autocomplete",
+    "people-also-ask-scraper": "People Also Ask questions (up to 4 levels), related searches and AI Overview text",
+    "google-rank-tracker": "Google positions per keyword with change since last run and AI Overview citation check",
+    "bulk-pagespeed-checker": "PageSpeed Insights scores and real-user Core Web Vitals for hundreds of URLs",
+    "amazon-keyword-research": "Reverse ASIN lookup, Amazon keyword ideas and Amazon search volume",
+    "ai-answer-scraper": "Answers and cited sources from ChatGPT, Perplexity, Gemini, Google AI Mode and Claude",
+    "businesses-without-websites": "Google Maps businesses with no website or a weak one, scored as leads",
+    "google-maps-grid-rank-tracker": "Google Maps rank on an N x N geo-grid with heatmap and competitors per pin"
+  }
+}
