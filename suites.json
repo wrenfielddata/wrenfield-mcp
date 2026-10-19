@@ -17,13 +17,13 @@
         "keyword-search-volume",
         "domain-authority-traffic-checker",
         "google-trends-scraper",
-        "google-ads-transparency-scraper"
+        "google-ads-transparency-scraper",
+        "competitor-keywords",
+        "keyword-difficulty-checker"
       ],
       "comingSoon": [
         "keyword-research-tool",
         "seo-toolkit",
-        "competitor-keywords",
-        "keyword-difficulty-checker",
         "google-autocomplete-keyword-expander",
         "people-also-ask-scraper",
         "google-rank-tracker",

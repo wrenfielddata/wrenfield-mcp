@@ -2,7 +2,7 @@
   "mcpServers": {
     "wrenfield-seo": {
       "type": "streamableHttp",
-      "url": "https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper",
+      "url": "https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker",
       "headers": {
         "Authorization": "Bearer <YOUR_APIFY_TOKEN>"
       }

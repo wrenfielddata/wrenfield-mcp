@@ -4,7 +4,7 @@ These are **remote** MCP servers hosted on the Apify MCP server (`mcp.apify.com`
 Do not clone, build or run anything from this repository.
 
 1. Ask the user which server they want. All three can be added side by side:
-   - **Wrenfield SEO Data** (`wrenfield-seo`): `https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper`
+   - **Wrenfield SEO Data** (`wrenfield-seo`): `https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker`
    - **Wrenfield AI Search Visibility** (`wrenfield-ai-search`): `https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume`
    - **Wrenfield Local Leads** (`wrenfield-leads`): `https://mcp.apify.com?tools=wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/company-name-to-domain`
 2. Authentication: if the client supports remote MCP OAuth, add only the URL and the user signs in to Apify in the browser.
@@ -16,7 +16,7 @@ Do not clone, build or run anything from this repository.
 {
   "mcpServers": {
     "wrenfield-seo": {
-      "url": "https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper",
+      "url": "https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker",
       "headers": { "Authorization": "Bearer <APIFY_TOKEN>" }
     }
   }
@@ -24,7 +24,7 @@ Do not clone, build or run anything from this repository.
 ```
 
    For Cline, add `"type": "streamableHttp"` next to `url`. Ready-made files for other clients are in `configs/`.
-4. Verify by listing tools. Expect `wrenfield-data--keyword-search-volume`, `wrenfield-data--domain-authority-traffic-checker`, `wrenfield-data--google-trends-scraper`, `wrenfield-data--google-ads-transparency-scraper`
+4. Verify by listing tools. Expect `wrenfield-data--keyword-search-volume`, `wrenfield-data--domain-authority-traffic-checker`, `wrenfield-data--google-trends-scraper`, `wrenfield-data--google-ads-transparency-scraper`, `wrenfield-data--competitor-keywords`, `wrenfield-data--keyword-difficulty-checker`
    plus Apify helper tools (`get-actor-run`, `get-dataset-items`, `get-key-value-store-record`, `abort-actor-run`).
 5. Every tool call is billed per result to the user's Apify account. Ask before large runs. The per-Actor
    tools above take only the Actor input and have no spend-cap argument. To cap the spend of a single run,

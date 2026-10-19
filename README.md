@@ -58,7 +58,7 @@ Keyword research, domain-level SEO data, search trends and competitor ads. Keywo
 
 <!-- BEGIN:url:seo-data -->
 ```text
-https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper
+https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker
 ```
 <!-- END:url:seo-data -->
 
@@ -69,6 +69,8 @@ https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/
 | <img src="assets/icons/domain-authority-traffic-checker.png" width="28" alt=""> | [`wrenfield-data--domain-authority-traffic-checker`](https://apify.com/wrenfield-data/domain-authority-traffic-checker) | Domain rank, backlinks, referring domains, spam score and estimated organic/paid traffic, in bulk | $0.005 per domain result ($5.00 / 1,000)<br><sub>also $0.20 per domain report; $0.001 per run start</sub> |
 | <img src="assets/icons/google-trends-scraper.png" width="28" alt=""> | [`wrenfield-data--google-trends-scraper`](https://apify.com/wrenfield-data/google-trends-scraper) | Interest over time and by region, related queries and topics, and Trending Now by country | $0.003 per search term analysed ($3.00 / 1,000)<br><sub>also $0.0005 per trending search</sub> |
 | <img src="assets/icons/google-ads-transparency-scraper.png" width="28" alt=""> | [`wrenfield-data--google-ads-transparency-scraper`](https://apify.com/wrenfield-data/google-ads-transparency-scraper) | A competitor's Google ads from the Ads Transparency Center: text, images, videos, regions, dates | $0.0015 per ad result ($1.50 / 1,000)<br><sub>also $0.001 per run start</sub> |
+| <img src="assets/icons/competitor-keywords.png" width="28" alt=""> | [`wrenfield-data--competitor-keywords`](https://apify.com/wrenfield-data/competitor-keywords) | Every keyword a domain or page ranks for, with position, volume and estimated traffic | $0.002 per ranked keyword ($2.00 / 1,000)<br><sub>also $0.03 per domain lookup</sub> |
+| <img src="assets/icons/keyword-difficulty-checker.png" width="28" alt=""> | [`wrenfield-data--keyword-difficulty-checker`](https://apify.com/wrenfield-data/keyword-difficulty-checker) | Bulk keyword difficulty (0-100) and search intent | $0.005 per keyword difficulty ($5.00 / 1,000)<br><sub>also $0.0015 per search intent; $0.025 per keyword batch</sub> |
 <!-- END:table:seo-data -->
 
 <!-- BEGIN:soon:seo-data -->
@@ -76,8 +78,6 @@ https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/
 
 - `wrenfield-data--keyword-research-tool`: Keyword ideas with volume, CPC, keyword difficulty, intent and SERP features in one row
 - `wrenfield-data--seo-toolkit`: Domain overview, ranked keywords, competitors, backlinks and live SERPs in one Actor
-- `wrenfield-data--competitor-keywords`: Every keyword a domain or page ranks for, with position, volume and estimated traffic
-- `wrenfield-data--keyword-difficulty-checker`: Bulk keyword difficulty (0-100) and search intent
 - `wrenfield-data--google-autocomplete-keyword-expander`: Long-tail keyword ideas from Google and YouTube Autocomplete
 - `wrenfield-data--people-also-ask-scraper`: People Also Ask questions (up to 4 levels), related searches and AI Overview text
 - `wrenfield-data--google-rank-tracker`: Google positions per keyword with change since last run and AI Overview citation check

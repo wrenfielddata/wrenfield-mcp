@@ -6,7 +6,7 @@
         "-y",
         "@apify/actors-mcp-server@latest",
         "--tools",
-        "wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper"
+        "wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker"
       ],
       "env": {
         "APIFY_TOKEN": "<YOUR_APIFY_TOKEN>"
