@@ -4,7 +4,7 @@
   "registryNamespace": "io.github.wrenfielddata",
   "repo": "https://github.com/wrenfielddata/wrenfield-mcp",
   "website": "https://wrenfielddata.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "suites": [
     {
       "id": "seo-data",
@@ -19,13 +19,13 @@
         "google-trends-scraper",
         "google-ads-transparency-scraper",
         "competitor-keywords",
-        "keyword-difficulty-checker"
-      ],
-      "comingSoon": [
+        "keyword-difficulty-checker",
         "keyword-research-tool",
         "seo-toolkit",
         "google-autocomplete-keyword-expander",
-        "people-also-ask-scraper",
+        "people-also-ask-scraper"
+      ],
+      "comingSoon": [
         "google-rank-tracker",
         "bulk-pagespeed-checker",
         "amazon-keyword-research"
@@ -40,11 +40,11 @@
       "icon": "ai-search-visibility-tracker",
       "tools": [
         "ai-search-visibility-tracker",
-        "keyword-search-volume"
+        "keyword-search-volume",
+        "people-also-ask-scraper"
       ],
       "comingSoon": [
         "ai-answer-scraper",
-        "people-also-ask-scraper",
         "google-rank-tracker"
       ]
     },

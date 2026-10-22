@@ -3,7 +3,7 @@
   "name": "io.github.wrenfielddata/ai-search-visibility",
   "title": "Wrenfield AI Search Visibility",
   "description": "Track brand mentions, share of voice and cited URLs in ChatGPT, Perplexity, Gemini and AI Overviews.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://wrenfielddata.com",
   "repository": {
     "url": "https://github.com/wrenfielddata/wrenfield-mcp",
@@ -22,7 +22,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume",
+      "url": "https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/people-also-ask-scraper",
       "headers": [
         {
           "name": "Authorization",
@@ -38,12 +38,14 @@
       "host": "Apify MCP server (mcp.apify.com)",
       "tools": [
         "wrenfield-data--ai-search-visibility-tracker",
-        "wrenfield-data--keyword-search-volume"
+        "wrenfield-data--keyword-search-volume",
+        "wrenfield-data--people-also-ask-scraper"
       ],
       "pricing": "Pay per result on Apify; no subscription",
       "apifyStore": [
         "https://apify.com/wrenfield-data/ai-search-visibility-tracker",
-        "https://apify.com/wrenfield-data/keyword-search-volume"
+        "https://apify.com/wrenfield-data/keyword-search-volume",
+        "https://apify.com/wrenfield-data/people-also-ask-scraper"
       ]
     }
   }

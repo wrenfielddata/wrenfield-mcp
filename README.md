@@ -58,7 +58,7 @@ Keyword research, domain-level SEO data, search trends and competitor ads. Keywo
 
 <!-- BEGIN:url:seo-data -->
 ```text
-https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker
+https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper
 ```
 <!-- END:url:seo-data -->
 
@@ -71,15 +71,15 @@ https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/
 | <img src="assets/icons/google-ads-transparency-scraper.png" width="28" alt=""> | [`wrenfield-data--google-ads-transparency-scraper`](https://apify.com/wrenfield-data/google-ads-transparency-scraper) | A competitor's Google ads from the Ads Transparency Center: text, images, videos, regions, dates | $0.0015 per ad result ($1.50 / 1,000)<br><sub>also $0.001 per run start</sub> |
 | <img src="assets/icons/competitor-keywords.png" width="28" alt=""> | [`wrenfield-data--competitor-keywords`](https://apify.com/wrenfield-data/competitor-keywords) | Every keyword a domain or page ranks for, with position, volume and estimated traffic | $0.002 per ranked keyword ($2.00 / 1,000)<br><sub>also $0.03 per domain lookup</sub> |
 | <img src="assets/icons/keyword-difficulty-checker.png" width="28" alt=""> | [`wrenfield-data--keyword-difficulty-checker`](https://apify.com/wrenfield-data/keyword-difficulty-checker) | Bulk keyword difficulty (0-100) and search intent | $0.005 per keyword difficulty ($5.00 / 1,000)<br><sub>also $0.0015 per search intent; $0.025 per keyword batch</sub> |
+| <img src="assets/icons/keyword-research-tool.png" width="28" alt=""> | [`wrenfield-data--keyword-research-tool`](https://apify.com/wrenfield-data/keyword-research-tool) | Keyword ideas with volume, CPC, keyword difficulty, intent and SERP features in one row | $0.003 per keyword result ($3.00 / 1,000)<br><sub>also $0.025 per research request</sub> |
+| <img src="assets/icons/seo-toolkit.png" width="28" alt=""> | [`wrenfield-data--seo-toolkit`](https://apify.com/wrenfield-data/seo-toolkit) | Domain overview, ranked keywords, competitors, backlinks and live SERPs in one Actor | $0.003 per result row ($3.00 / 1,000)<br><sub>also $0.03 per seo data request; $0.06 per backlinks request; $0.005 per SERP request</sub> |
+| <img src="assets/icons/google-autocomplete-keyword-expander.png" width="28" alt=""> | [`wrenfield-data--google-autocomplete-keyword-expander`](https://apify.com/wrenfield-data/google-autocomplete-keyword-expander) | Long-tail keyword ideas from Google and YouTube Autocomplete | $0.001 per keyword suggestion ($1.00 / 1,000)<br><sub>also $0.005 per keyword metrics; $0.025 per metrics batch</sub> |
+| <img src="assets/icons/people-also-ask-scraper.png" width="28" alt=""> | [`wrenfield-data--people-also-ask-scraper`](https://apify.com/wrenfield-data/people-also-ask-scraper) | People Also Ask questions (up to 4 levels), related searches and AI Overview text | $0.0055 per keyword search ($5.50 / 1,000)<br><sub>also $0.0006 per People Also Ask question; $0.005 per AI Overview check</sub> |
 <!-- END:table:seo-data -->
 
 <!-- BEGIN:soon:seo-data -->
 **Coming soon** (being published on Apify Store this week; not callable yet):
 
-- `wrenfield-data--keyword-research-tool`: Keyword ideas with volume, CPC, keyword difficulty, intent and SERP features in one row
-- `wrenfield-data--seo-toolkit`: Domain overview, ranked keywords, competitors, backlinks and live SERPs in one Actor
-- `wrenfield-data--google-autocomplete-keyword-expander`: Long-tail keyword ideas from Google and YouTube Autocomplete
-- `wrenfield-data--people-also-ask-scraper`: People Also Ask questions (up to 4 levels), related searches and AI Overview text
 - `wrenfield-data--google-rank-tracker`: Google positions per keyword with change since last run and AI Overview citation check
 - `wrenfield-data--bulk-pagespeed-checker`: PageSpeed Insights scores and real-user Core Web Vitals for hundreds of URLs
 - `wrenfield-data--amazon-keyword-research`: Reverse ASIN lookup, Amazon keyword ideas and Amazon search volume
@@ -93,7 +93,7 @@ Generative-engine optimization (GEO/AEO) data: run your prompts across AI assist
 
 <!-- BEGIN:url:ai-search-visibility -->
 ```text
-https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume
+https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/people-also-ask-scraper
 ```
 <!-- END:url:ai-search-visibility -->
 
@@ -102,13 +102,13 @@ https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfiel
 |---|---|---|---|
 | <img src="assets/icons/ai-search-visibility-tracker.png" width="28" alt=""> | [`wrenfield-data--ai-search-visibility-tracker`](https://apify.com/wrenfield-data/ai-search-visibility-tracker) | Per prompt and AI engine: answer text, brand mention and rank, sentiment, cited URLs, share of voice | $0.04 per prompt check |
 | <img src="assets/icons/keyword-search-volume.png" width="28" alt=""> | [`wrenfield-data--keyword-search-volume`](https://apify.com/wrenfield-data/keyword-search-volume) | Google Keyword Planner search volume, CPC, competition and 12-month trend per keyword, plus keyword ideas | $0.004 per keyword result ($4.00 / 1,000)<br><sub>also $0.15 per Google Ads live request; $0.08 per Google Ads queued request</sub> |
+| <img src="assets/icons/people-also-ask-scraper.png" width="28" alt=""> | [`wrenfield-data--people-also-ask-scraper`](https://apify.com/wrenfield-data/people-also-ask-scraper) | People Also Ask questions (up to 4 levels), related searches and AI Overview text | $0.0055 per keyword search ($5.50 / 1,000)<br><sub>also $0.0006 per People Also Ask question; $0.005 per AI Overview check</sub> |
 <!-- END:table:ai-search-visibility -->
 
 <!-- BEGIN:soon:ai-search-visibility -->
 **Coming soon** (being published on Apify Store this week; not callable yet):
 
 - `wrenfield-data--ai-answer-scraper`: Answers and cited sources from ChatGPT, Perplexity, Gemini, Google AI Mode and Claude
-- `wrenfield-data--people-also-ask-scraper`: People Also Ask questions (up to 4 levels), related searches and AI Overview text
 - `wrenfield-data--google-rank-tracker`: Google positions per keyword with change since last run and AI Overview citation check
 <!-- END:soon:ai-search-visibility -->
 
@@ -160,7 +160,7 @@ These Actors aren't in a suite, but you can add any of them to a suite URL (`...
 <!-- END:table:more -->
 
 <!-- BEGIN:prices-date -->
-<sub>Prices pulled from Apify Store on 2026-10-19. They are Apify Free-plan rates; paid Apify plans get lower tiered rates. Each Actor's Store page is the authoritative price list. A "run start" fee is charged once per call.</sub>
+<sub>Prices pulled from Apify Store on 2026-10-22. They are Apify Free-plan rates; paid Apify plans get lower tiered rates. Each Actor's Store page is the authoritative price list. A "run start" fee is charged once per call.</sub>
 <!-- END:prices-date -->
 
 ---
