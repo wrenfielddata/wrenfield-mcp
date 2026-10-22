@@ -191,6 +191,40 @@ def configs():
     write("configs/claude-code.sh", "\n".join(lines) + "\n")
 
 
+# Apify affiliate ref for human-facing apify.com links in this open-source repo (README / llms-install.md).
+# Allowed by Apify Affiliate Terms s.8 (open-source GitHub repos). Never used in Apify Store READMEs (Terms 6.1(6)).
+# Machine endpoints (mcp.apify.com, api.apify.com) and anything inside code spans/fences are left untouched.
+_FPR_HOSTS = ("apify.com", "www.apify.com", "console.apify.com", "docs.apify.com")
+_BARE = re.compile(r"""(?<![\w/.])(https?://(?:www\.|console\.|docs\.)?apify\.com(?:/[^\s)\]>"'`]*)?)""")
+
+
+def _add_fpr(url, fid):
+    from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+    core = url.rstrip(".,;:"); tail = url[len(core):]
+    p = urlsplit(core)
+    if (p.hostname or "").lower() not in _FPR_HOSTS:
+        return url
+    q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True) if k != "fpr"] + [("fpr", fid)]
+    return urlunsplit((p.scheme, p.netloc, p.path, urlencode(q, safe="/:@"), p.fragment)) + tail
+
+
+def with_fpr(text):
+    fid = (CFG.get("apify_fpr") or "").strip()
+    if not fid:
+        return text
+    out, fence = [], False
+    for line in text.split("\n"):
+        if line.lstrip().startswith("```"):
+            fence = not fence; out.append(line); continue
+        if fence:
+            out.append(line); continue
+        parts = line.split("`")
+        for i in range(0, len(parts), 2):
+            parts[i] = _BARE.sub(lambda m: _add_fpr(m.group(1), fid), parts[i])
+        out.append("`".join(parts))
+    return "\n".join(out)
+
+
 def replace_block(text, name, body):
     pat = re.compile(rf"<!-- BEGIN:{re.escape(name)} -->.*?<!-- END:{re.escape(name)} -->", re.S)
     if not pat.search(text):
@@ -209,7 +243,7 @@ def readme():
         text = replace_block(text, f"soon:{s['id']}", ("**Coming soon** (being published on Apify Store this week; not callable yet):\n\n" + soon_list(soon)) if soon else "")
     text = replace_block(text, "table:more", table(CFG["more"]))
     text = replace_block(text, "prices-date", f"<sub>Prices pulled from Apify Store on {date.today().isoformat()}. They are Apify Free-plan rates; paid Apify plans get lower tiered rates. Each Actor's Store page is the authoritative price list. A \"run start\" fee is charged once per call.</sub>")
-    p.write_text(text)
+    p.write_text(with_fpr(text))
 
 
 def llms_install():
@@ -249,7 +283,7 @@ Do not clone, build or run anything from this repository.
    `get-dataset-items`.
 6. HTTP 401 means the token is missing or invalid.
 """
-    write("llms-install.md", body)
+    write("llms-install.md", with_fpr(body))
 
 
 if __name__ == "__main__":

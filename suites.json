@@ -1,10 +1,11 @@
 {
+  "version": "1.0.1",
+  "apify_fpr": "qx6tzs",
   "owner": "wrenfield-data",
   "mcpBase": "https://mcp.apify.com",
   "registryNamespace": "io.github.wrenfielddata",
   "repo": "https://github.com/wrenfielddata/wrenfield-mcp",
   "website": "https://wrenfielddata.com",
-  "version": "1.0.1",
   "suites": [
     {
       "id": "seo-data",
