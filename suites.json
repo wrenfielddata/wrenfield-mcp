@@ -29,7 +29,8 @@
       "comingSoon": [
         "google-rank-tracker",
         "bulk-pagespeed-checker",
-        "amazon-keyword-research"
+        "amazon-keyword-research",
+        "keyword-gap-report"
       ]
     },
     {
@@ -112,6 +113,7 @@
     "ai-answer-scraper": "Answers and cited sources from ChatGPT, Perplexity, Gemini, Google AI Mode and Claude",
     "businesses-without-websites": "Google Maps businesses with no website or a weak one, scored as leads",
     "google-maps-grid-rank-tracker": "Google Maps rank on an N x N geo-grid with heatmap and competitors per pin",
-    "agency-ai-visibility-reports": "White-label weekly AI visibility packets per client: mentions, share of voice, evidence and actions across ChatGPT, Perplexity, Gemini and AI Mode"
+    "agency-ai-visibility-reports": "White-label weekly AI visibility packets per client: mentions, share of voice, evidence and actions across ChatGPT, Perplexity, Gemini and AI Mode",
+    "keyword-gap-report": "Keywords up to 3 competitors rank for and a domain doesn't: volume, KD, intent, competing URLs and reasons, top 20 re-checked on live Google ($9 per report)"
   }
 }

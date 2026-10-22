@@ -83,6 +83,7 @@ https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/
 - `wrenfield-data--google-rank-tracker`: Google positions per keyword with change since last run and AI Overview citation check
 - `wrenfield-data--bulk-pagespeed-checker`: PageSpeed Insights scores and real-user Core Web Vitals for hundreds of URLs
 - `wrenfield-data--amazon-keyword-research`: Reverse ASIN lookup, Amazon keyword ideas and Amazon search volume
+- `wrenfield-data--keyword-gap-report`: Keywords up to 3 competitors rank for and a domain doesn't: volume, KD, intent, competing URLs and reasons, top 20 re-checked on live Google ($9 per report)
 <!-- END:soon:seo-data -->
 
 ## 2. AI Search Visibility
