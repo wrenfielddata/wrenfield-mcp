@@ -17,7 +17,7 @@
     },
     "wrenfield-ai-search": {
       "type": "http",
-      "url": "https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/people-also-ask-scraper",
+      "url": "https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/people-also-ask-scraper,wrenfield-data/ai-answer-scraper,wrenfield-data/agency-ai-visibility-reports",
       "headers": {
         "Authorization": "Bearer ${input:apify-token}"
       }

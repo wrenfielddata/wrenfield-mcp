@@ -5,7 +5,7 @@ Do not clone, build or run anything from this repository.
 
 1. Ask the user which server they want. All three can be added side by side:
    - **Wrenfield SEO Data** (`wrenfield-seo`): `https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper`
-   - **Wrenfield AI Search Visibility** (`wrenfield-ai-search`): `https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/people-also-ask-scraper`
+   - **Wrenfield AI Search Visibility** (`wrenfield-ai-search`): `https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/people-also-ask-scraper,wrenfield-data/ai-answer-scraper,wrenfield-data/agency-ai-visibility-reports`
    - **Wrenfield Local Leads** (`wrenfield-leads`): `https://mcp.apify.com?tools=wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/company-name-to-domain`
 2. Authentication: if the client supports remote MCP OAuth, add only the URL and the user signs in to Apify in the browser.
    Otherwise ask the user for an Apify API token (Apify Console > Settings > API & Integrations) and send it as

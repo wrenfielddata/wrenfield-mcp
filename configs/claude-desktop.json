@@ -18,7 +18,7 @@
         "-y",
         "@apify/actors-mcp-server@latest",
         "--tools",
-        "wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/people-also-ask-scraper"
+        "wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/people-also-ask-scraper,wrenfield-data/ai-answer-scraper,wrenfield-data/agency-ai-visibility-reports"
       ],
       "env": {
         "APIFY_TOKEN": "<YOUR_APIFY_TOKEN>"

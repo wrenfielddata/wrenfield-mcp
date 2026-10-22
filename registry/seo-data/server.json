@@ -3,7 +3,7 @@
   "name": "io.github.wrenfielddata/seo-data",
   "title": "Wrenfield SEO Data",
   "description": "Keyword search volume, CPC, domain authority, organic traffic, Google Trends and competitor ads.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "websiteUrl": "https://wrenfielddata.com",
   "repository": {
     "url": "https://github.com/wrenfielddata/wrenfield-mcp",

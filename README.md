@@ -93,7 +93,7 @@ Generative-engine optimization (GEO/AEO) data: run your prompts across AI assist
 
 <!-- BEGIN:url:ai-search-visibility -->
 ```text
-https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/people-also-ask-scraper
+https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/people-also-ask-scraper,wrenfield-data/ai-answer-scraper,wrenfield-data/agency-ai-visibility-reports
 ```
 <!-- END:url:ai-search-visibility -->
 
@@ -103,12 +103,13 @@ https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfiel
 | <img src="assets/icons/ai-search-visibility-tracker.png" width="28" alt=""> | [`wrenfield-data--ai-search-visibility-tracker`](https://apify.com/wrenfield-data/ai-search-visibility-tracker?fpr=qx6tzs) | Per prompt and AI engine: answer text, brand mention and rank, sentiment, cited URLs, share of voice | $0.04 per prompt check |
 | <img src="assets/icons/keyword-search-volume.png" width="28" alt=""> | [`wrenfield-data--keyword-search-volume`](https://apify.com/wrenfield-data/keyword-search-volume?fpr=qx6tzs) | Google Keyword Planner search volume, CPC, competition and 12-month trend per keyword, plus keyword ideas | $0.004 per keyword result ($4.00 / 1,000)<br><sub>also $0.15 per Google Ads live request; $0.08 per Google Ads queued request</sub> |
 | <img src="assets/icons/people-also-ask-scraper.png" width="28" alt=""> | [`wrenfield-data--people-also-ask-scraper`](https://apify.com/wrenfield-data/people-also-ask-scraper?fpr=qx6tzs) | People Also Ask questions (up to 4 levels), related searches and AI Overview text | $0.0055 per keyword search ($5.50 / 1,000)<br><sub>also $0.0006 per People Also Ask question; $0.005 per AI Overview check</sub> |
+| <img src="assets/icons/ai-answer-scraper.png" width="28" alt=""> | [`wrenfield-data--ai-answer-scraper`](https://apify.com/wrenfield-data/ai-answer-scraper?fpr=qx6tzs) | Answers and cited sources from ChatGPT, Perplexity, Gemini, Google AI Mode and Claude | $0.015 per AI answer<br><sub>also $0.006 per empty answer</sub> |
+| <img src="assets/icons/agency-ai-visibility-reports.png" width="28" alt=""> | [`wrenfield-data--agency-ai-visibility-reports`](https://apify.com/wrenfield-data/agency-ai-visibility-reports?fpr=qx6tzs) | White-label weekly AI visibility packets per client: mentions, share of voice, evidence and actions across ChatGPT, Perplexity, Gemini and AI Mode | $12.00 per client packet (books of 1-19 clients)<br><sub>also $8.00 per client packet (books of 20-49 clients); $7.00 per client packet (books of 50+ clients)</sub> |
 <!-- END:table:ai-search-visibility -->
 
 <!-- BEGIN:soon:ai-search-visibility -->
 **Coming soon** (being published on Apify Store this week; not callable yet):
 
-- `wrenfield-data--ai-answer-scraper`: Answers and cited sources from ChatGPT, Perplexity, Gemini, Google AI Mode and Claude
 - `wrenfield-data--google-rank-tracker`: Google positions per keyword with change since last run and AI Overview citation check
 <!-- END:soon:ai-search-visibility -->
 

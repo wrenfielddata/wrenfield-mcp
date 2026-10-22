@@ -3,7 +3,7 @@
   "name": "io.github.wrenfielddata/local-leads",
   "title": "Wrenfield Local Leads",
   "description": "Company websites to emails, phones, socials and tech stack; company names to official domains.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "websiteUrl": "https://wrenfielddata.com",
   "repository": {
     "url": "https://github.com/wrenfielddata/wrenfield-mcp",

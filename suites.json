@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "apify_fpr": "qx6tzs",
   "owner": "wrenfield-data",
   "mcpBase": "https://mcp.apify.com",
@@ -42,10 +42,11 @@
       "tools": [
         "ai-search-visibility-tracker",
         "keyword-search-volume",
-        "people-also-ask-scraper"
+        "people-also-ask-scraper",
+        "ai-answer-scraper",
+        "agency-ai-visibility-reports"
       ],
       "comingSoon": [
-        "ai-answer-scraper",
         "google-rank-tracker"
       ]
     },
@@ -110,6 +111,7 @@
     "amazon-keyword-research": "Reverse ASIN lookup, Amazon keyword ideas and Amazon search volume",
     "ai-answer-scraper": "Answers and cited sources from ChatGPT, Perplexity, Gemini, Google AI Mode and Claude",
     "businesses-without-websites": "Google Maps businesses with no website or a weak one, scored as leads",
-    "google-maps-grid-rank-tracker": "Google Maps rank on an N x N geo-grid with heatmap and competitors per pin"
+    "google-maps-grid-rank-tracker": "Google Maps rank on an N x N geo-grid with heatmap and competitors per pin",
+    "agency-ai-visibility-reports": "White-label weekly AI visibility packets per client: mentions, share of voice, evidence and actions across ChatGPT, Perplexity, Gemini and AI Mode"
   }
 }
