@@ -3,7 +3,7 @@
   "name": "io.github.wrenfielddata/seo-data",
   "title": "Wrenfield SEO Data",
   "description": "Keyword search volume, CPC, domain authority, organic traffic, Google Trends and competitor ads.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "websiteUrl": "https://wrenfielddata.com",
   "repository": {
     "url": "https://github.com/wrenfielddata/wrenfield-mcp",
@@ -22,7 +22,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper",
+      "url": "https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper,wrenfield-data/keyword-gap-report",
       "headers": [
         {
           "name": "Authorization",
@@ -46,7 +46,8 @@
         "wrenfield-data--keyword-research-tool",
         "wrenfield-data--seo-toolkit",
         "wrenfield-data--google-autocomplete-keyword-expander",
-        "wrenfield-data--people-also-ask-scraper"
+        "wrenfield-data--people-also-ask-scraper",
+        "wrenfield-data--keyword-gap-report"
       ],
       "pricing": "Pay per result on Apify; no subscription",
       "apifyStore": [
@@ -59,7 +60,8 @@
         "https://apify.com/wrenfield-data/keyword-research-tool",
         "https://apify.com/wrenfield-data/seo-toolkit",
         "https://apify.com/wrenfield-data/google-autocomplete-keyword-expander",
-        "https://apify.com/wrenfield-data/people-also-ask-scraper"
+        "https://apify.com/wrenfield-data/people-also-ask-scraper",
+        "https://apify.com/wrenfield-data/keyword-gap-report"
       ]
     }
   }

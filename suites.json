@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "apify_fpr": "qx6tzs",
   "owner": "wrenfield-data",
   "mcpBase": "https://mcp.apify.com",
@@ -24,13 +24,13 @@
         "keyword-research-tool",
         "seo-toolkit",
         "google-autocomplete-keyword-expander",
-        "people-also-ask-scraper"
+        "people-also-ask-scraper",
+        "keyword-gap-report"
       ],
       "comingSoon": [
         "google-rank-tracker",
         "bulk-pagespeed-checker",
-        "amazon-keyword-research",
-        "keyword-gap-report"
+        "amazon-keyword-research"
       ]
     },
     {
