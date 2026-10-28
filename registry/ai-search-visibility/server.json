@@ -3,7 +3,7 @@
   "name": "io.github.wrenfielddata/ai-search-visibility",
   "title": "Wrenfield AI Search Visibility",
   "description": "Track brand mentions, share of voice and cited URLs in ChatGPT, Perplexity, Gemini and AI Overviews.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "websiteUrl": "https://wrenfielddata.com",
   "repository": {
     "url": "https://github.com/wrenfielddata/wrenfield-mcp",

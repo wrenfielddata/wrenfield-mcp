@@ -6,7 +6,7 @@
         "-y",
         "@apify/actors-mcp-server@latest",
         "--tools",
-        "wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper,wrenfield-data/keyword-gap-report"
+        "wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper,wrenfield-data/keyword-gap-report,wrenfield-data/bulk-pagespeed-checker,wrenfield-data/amazon-keyword-research"
       ],
       "env": {
         "APIFY_TOKEN": "<YOUR_APIFY_TOKEN>"
@@ -30,7 +30,7 @@
         "-y",
         "@apify/actors-mcp-server@latest",
         "--tools",
-        "wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/company-name-to-domain"
+        "wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/company-name-to-domain,wrenfield-data/businesses-without-websites,wrenfield-data/google-maps-grid-rank-tracker,wrenfield-data/bulk-pagespeed-checker"
       ],
       "env": {
         "APIFY_TOKEN": "<YOUR_APIFY_TOKEN>"

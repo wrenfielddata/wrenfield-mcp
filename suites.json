@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "apify_fpr": "qx6tzs",
   "owner": "wrenfield-data",
   "mcpBase": "https://mcp.apify.com",
@@ -25,12 +25,12 @@
         "seo-toolkit",
         "google-autocomplete-keyword-expander",
         "people-also-ask-scraper",
-        "keyword-gap-report"
-      ],
-      "comingSoon": [
-        "google-rank-tracker",
+        "keyword-gap-report",
         "bulk-pagespeed-checker",
         "amazon-keyword-research"
+      ],
+      "comingSoon": [
+        "google-rank-tracker"
       ]
     },
     {
@@ -61,13 +61,12 @@
       "tools": [
         "website-contact-scraper",
         "website-tech-stack-detector",
-        "company-name-to-domain"
-      ],
-      "comingSoon": [
+        "company-name-to-domain",
         "businesses-without-websites",
         "google-maps-grid-rank-tracker",
         "bulk-pagespeed-checker"
-      ]
+      ],
+      "comingSoon": []
     }
   ],
   "more": [

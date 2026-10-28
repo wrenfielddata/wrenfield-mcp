@@ -58,7 +58,7 @@ Keyword research, domain-level SEO data, search trends and competitor ads. Keywo
 
 <!-- BEGIN:url:seo-data -->
 ```text
-https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper,wrenfield-data/keyword-gap-report
+https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper,wrenfield-data/keyword-gap-report,wrenfield-data/bulk-pagespeed-checker,wrenfield-data/amazon-keyword-research
 ```
 <!-- END:url:seo-data -->
 
@@ -76,14 +76,14 @@ https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/
 | <img src="assets/icons/google-autocomplete-keyword-expander.png" width="28" alt=""> | [`wrenfield-data--google-autocomplete-keyword-expander`](https://apify.com/wrenfield-data/google-autocomplete-keyword-expander?fpr=qx6tzs) | Long-tail keyword ideas from Google and YouTube Autocomplete | $0.001 per keyword suggestion ($1.00 / 1,000)<br><sub>also $0.005 per keyword metrics; $0.025 per metrics batch</sub> |
 | <img src="assets/icons/people-also-ask-scraper.png" width="28" alt=""> | [`wrenfield-data--people-also-ask-scraper`](https://apify.com/wrenfield-data/people-also-ask-scraper?fpr=qx6tzs) | People Also Ask questions (up to 4 levels), related searches and AI Overview text | $0.0055 per keyword search ($5.50 / 1,000)<br><sub>also $0.0006 per People Also Ask question; $0.005 per AI Overview check</sub> |
 | <img src="assets/icons/keyword-gap-report.png" width="28" alt=""> | [`wrenfield-data--keyword-gap-report`](https://apify.com/wrenfield-data/keyword-gap-report?fpr=qx6tzs) | Keywords up to 3 competitors rank for and a domain doesn't: volume, KD, intent, competing URLs and reasons, top 20 re-checked on live Google ($9 per report) | $9.00 per keyword gap report |
+| <img src="assets/icons/bulk-pagespeed-checker.png" width="28" alt=""> | [`wrenfield-data--bulk-pagespeed-checker`](https://apify.com/wrenfield-data/bulk-pagespeed-checker?fpr=qx6tzs) | PageSpeed Insights scores and real-user Core Web Vitals for hundreds of URLs | $0.005 per PageSpeed test ($5.00 / 1,000)<br><sub>also $0.015 per backup Lighthouse test</sub> |
+| <img src="assets/icons/amazon-keyword-research.png" width="28" alt=""> | [`wrenfield-data--amazon-keyword-research`](https://apify.com/wrenfield-data/amazon-keyword-research?fpr=qx6tzs) | Reverse ASIN lookup, Amazon keyword ideas and Amazon search volume | $0.0015 per keyword result ($1.50 / 1,000)<br><sub>also $0.03 per data request</sub> |
 <!-- END:table:seo-data -->
 
 <!-- BEGIN:soon:seo-data -->
 **Coming soon** (being published on Apify Store this week; not callable yet):
 
 - `wrenfield-data--google-rank-tracker`: Google positions per keyword with change since last run and AI Overview citation check
-- `wrenfield-data--bulk-pagespeed-checker`: PageSpeed Insights scores and real-user Core Web Vitals for hundreds of URLs
-- `wrenfield-data--amazon-keyword-research`: Reverse ASIN lookup, Amazon keyword ideas and Amazon search volume
 <!-- END:soon:seo-data -->
 
 ## 2. AI Search Visibility
@@ -122,7 +122,7 @@ Turn a list of businesses into a usable lead list: official domains, public cont
 
 <!-- BEGIN:url:local-leads -->
 ```text
-https://mcp.apify.com?tools=wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/company-name-to-domain
+https://mcp.apify.com?tools=wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/company-name-to-domain,wrenfield-data/businesses-without-websites,wrenfield-data/google-maps-grid-rank-tracker,wrenfield-data/bulk-pagespeed-checker
 ```
 <!-- END:url:local-leads -->
 
@@ -132,14 +132,12 @@ https://mcp.apify.com?tools=wrenfield-data/website-contact-scraper,wrenfield-dat
 | <img src="assets/icons/website-contact-scraper.png" width="28" alt=""> | [`wrenfield-data--website-contact-scraper`](https://apify.com/wrenfield-data/website-contact-scraper?fpr=qx6tzs) | Emails, phone numbers and social profiles from a list of company websites, one row per site | $0.004 per website with contacts ($4.00 / 1,000) |
 | <img src="assets/icons/website-tech-stack-detector.png" width="28" alt=""> | [`wrenfield-data--website-tech-stack-detector`](https://apify.com/wrenfield-data/website-tech-stack-detector?fpr=qx6tzs) | CMS, ecommerce platform, analytics, ad pixels, hosting, CDN and email provider for any site | $0.0025 per website analyzed ($2.50 / 1,000)<br><sub>also $0.00005 per run start</sub> |
 | <img src="assets/icons/company-name-to-domain.png" width="28" alt=""> | [`wrenfield-data--company-name-to-domain`](https://apify.com/wrenfield-data/company-name-to-domain?fpr=qx6tzs) | Official website domain for each company name, with confidence score, LinkedIn URL and logo | $0.0015 per company resolved ($1.50 / 1,000)<br><sub>also $0.0001 per run start; $0.003 per Google search</sub> |
+| <img src="assets/icons/businesses-without-websites.png" width="28" alt=""> | [`wrenfield-data--businesses-without-websites`](https://apify.com/wrenfield-data/businesses-without-websites?fpr=qx6tzs) | Google Maps businesses with no website or a weak one, scored as leads | $0.007 per lead ($7.00 / 1,000)<br><sub>also $0.005 per Google Maps search; $0.003 per website audit</sub> |
+| <img src="assets/icons/google-maps-grid-rank-tracker.png" width="28" alt=""> | [`wrenfield-data--google-maps-grid-rank-tracker`](https://apify.com/wrenfield-data/google-maps-grid-rank-tracker?fpr=qx6tzs) | Google Maps rank on an N x N geo-grid with heatmap and competitors per pin | $0.008 per grid point ($8.00 / 1,000)<br><sub>also $0.005 per business lookup</sub> |
+| <img src="assets/icons/bulk-pagespeed-checker.png" width="28" alt=""> | [`wrenfield-data--bulk-pagespeed-checker`](https://apify.com/wrenfield-data/bulk-pagespeed-checker?fpr=qx6tzs) | PageSpeed Insights scores and real-user Core Web Vitals for hundreds of URLs | $0.005 per PageSpeed test ($5.00 / 1,000)<br><sub>also $0.015 per backup Lighthouse test</sub> |
 <!-- END:table:local-leads -->
 
 <!-- BEGIN:soon:local-leads -->
-**Coming soon** (being published on Apify Store this week; not callable yet):
-
-- `wrenfield-data--businesses-without-websites`: Google Maps businesses with no website or a weak one, scored as leads
-- `wrenfield-data--google-maps-grid-rank-tracker`: Google Maps rank on an N x N geo-grid with heatmap and competitors per pin
-- `wrenfield-data--bulk-pagespeed-checker`: PageSpeed Insights scores and real-user Core Web Vitals for hundreds of URLs
 <!-- END:soon:local-leads -->
 
 ### More Wrenfield Data Actors
@@ -162,7 +160,7 @@ These Actors aren't in a suite, but you can add any of them to a suite URL (`...
 <!-- END:table:more -->
 
 <!-- BEGIN:prices-date -->
-<sub>Prices pulled from Apify Store on 2026-10-23. They are Apify Free-plan rates; paid Apify plans get lower tiered rates. Each Actor's Store page is the authoritative price list. A "run start" fee is charged once per call.</sub>
+<sub>Prices pulled from Apify Store on 2026-10-28. They are Apify Free-plan rates; paid Apify plans get lower tiered rates. Each Actor's Store page is the authoritative price list. A "run start" fee is charged once per call.</sub>
 <!-- END:prices-date -->
 
 ---
