@@ -1,0 +1,56 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.wrenfielddata/company-data",
+  "title": "Wrenfield Company Data",
+  "description": "Verified company lookup: name to domain, domain or email to company, firmographics, tech stack.",
+  "version": "1.0.7",
+  "websiteUrl": "https://wrenfielddata.com",
+  "repository": {
+    "url": "https://github.com/wrenfielddata/wrenfield-mcp",
+    "source": "github",
+    "subfolder": "registry/company-data"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/wrenfielddata/wrenfield-mcp/main/assets/suites/company-data.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "400x400"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=wrenfield-data/company-name-to-domain,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/website-tech-stack-detector,wrenfield-data/website-contact-scraper",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. 'Bearer <Apify API token>' from Apify Console > Settings > API & Integrations. Omit to sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "host": "Apify MCP server (mcp.apify.com)",
+      "tools": [
+        "wrenfield-data--company-name-to-domain",
+        "wrenfield-data--domain-to-company",
+        "wrenfield-data--company-enrichment",
+        "wrenfield-data--website-tech-stack-detector",
+        "wrenfield-data--website-contact-scraper"
+      ],
+      "pricing": "Pay per result on Apify; no subscription",
+      "apifyStore": [
+        "https://apify.com/wrenfield-data/company-name-to-domain",
+        "https://apify.com/wrenfield-data/domain-to-company",
+        "https://apify.com/wrenfield-data/company-enrichment",
+        "https://apify.com/wrenfield-data/website-tech-stack-detector",
+        "https://apify.com/wrenfield-data/website-contact-scraper"
+      ]
+    }
+  }
+}

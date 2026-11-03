@@ -8,6 +8,9 @@
     },
     "wrenfield-leads": {
       "url": "https://mcp.apify.com?tools=wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/company-name-to-domain,wrenfield-data/businesses-without-websites,wrenfield-data/google-maps-grid-rank-tracker,wrenfield-data/bulk-pagespeed-checker"
+    },
+    "wrenfield-company-data": {
+      "url": "https://mcp.apify.com?tools=wrenfield-data/company-name-to-domain,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/website-tech-stack-detector,wrenfield-data/website-contact-scraper"
     }
   }
 }

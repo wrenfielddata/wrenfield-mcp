@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "apify_fpr": "qx6tzs",
   "owner": "wrenfield-data",
   "mcpBase": "https://mcp.apify.com",
@@ -69,6 +69,22 @@
         "businesses-without-websites",
         "google-maps-grid-rank-tracker",
         "bulk-pagespeed-checker"
+      ],
+      "comingSoon": []
+    },
+    {
+      "id": "company-data",
+      "key": "wrenfield-company-data",
+      "title": "Wrenfield Company Data",
+      "registryTitle": "Wrenfield Company Data",
+      "description": "Verified company lookup: name to domain, domain or email to company, firmographics, tech stack.",
+      "icon": "company-name-to-domain",
+      "tools": [
+        "company-name-to-domain",
+        "domain-to-company",
+        "company-enrichment",
+        "website-tech-stack-detector",
+        "website-contact-scraper"
       ],
       "comingSoon": []
     }

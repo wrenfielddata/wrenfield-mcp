@@ -31,6 +31,7 @@ Wrenfield Data publishes data tools as [Apify Actors](https://apify.com/wrenfiel
 | [SEO Data](#1-seo-data) | keyword volume and CPC, domain authority and traffic, trends, competitor ads | `wrenfield-seo` |
 | [AI Search Visibility](#2-ai-search-visibility) | how ChatGPT, Perplexity, Gemini, Claude and Google AI answers mention and cite a brand | `wrenfield-ai-search` |
 | [Local Leads](#3-local-leads) | contacts, tech stack and domains for business lead lists | `wrenfield-leads` |
+| [Company Data](#4-company-data) | verified company lookup: name to domain, domain or email to company, firmographics, tech stack | `wrenfield-company-data` |
 
 ## Quick start
 
@@ -143,6 +144,31 @@ https://mcp.apify.com?tools=wrenfield-data/website-contact-scraper,wrenfield-dat
 
 <!-- BEGIN:soon:local-leads -->
 <!-- END:soon:local-leads -->
+
+## 4. Company Data
+
+<img src="assets/suites/company-data.png" width="64" align="right" alt="">
+
+Company resolution for agents and data pipelines. Turn a company name into its official domain, checked against the live homepage and given a confidence score. Turn a domain or work email into the company behind it, then enrich it with firmographics, public contacts and tech stack. Free-mail domains and rows that don't resolve are not charged.
+
+<!-- BEGIN:url:company-data -->
+```text
+https://mcp.apify.com?tools=wrenfield-data/company-name-to-domain,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/website-tech-stack-detector,wrenfield-data/website-contact-scraper
+```
+<!-- END:url:company-data -->
+
+<!-- BEGIN:table:company-data -->
+| | Tool (MCP name) | What it returns | Price (Apify Free plan) |
+|---|---|---|---|
+| <img src="assets/icons/company-name-to-domain.png" width="28" alt=""> | [`wrenfield-data--company-name-to-domain`](https://apify.com/wrenfield-data/company-name-to-domain?fpr=qx6tzs) | Official website domain for each company name, with confidence score, LinkedIn URL, logo and company facts | $0.0015 per company resolved ($1.50 / 1,000)<br><sub>also $0.0001 per run start; $0.003 per Google search</sub> |
+| <img src="assets/icons/domain-to-company.png" width="28" alt=""> | [`wrenfield-data--domain-to-company`](https://apify.com/wrenfield-data/domain-to-company?fpr=qx6tzs) | Company behind each domain, URL or work email: name, country, industry, employees, founded year, LinkedIn, logo, live/parked check | $0.0015 per company found ($1.50 / 1,000)<br><sub>also $0.0001 per run start</sub> |
+| <img src="assets/icons/company-enrichment.png" width="28" alt=""> | [`wrenfield-data--company-enrichment`](https://apify.com/wrenfield-data/company-enrichment?fpr=qx6tzs) | One row per domain: company facts, public emails and phones, socials, tech stack and AI-crawler readiness | $0.004 per domain enriched ($4.00 / 1,000)<br><sub>also $0.0001 per run start</sub> |
+| <img src="assets/icons/website-tech-stack-detector.png" width="28" alt=""> | [`wrenfield-data--website-tech-stack-detector`](https://apify.com/wrenfield-data/website-tech-stack-detector?fpr=qx6tzs) | CMS, ecommerce platform, analytics, ad pixels, hosting, CDN and email provider for any site | $0.0025 per website analyzed ($2.50 / 1,000)<br><sub>also $0.00005 per run start</sub> |
+| <img src="assets/icons/website-contact-scraper.png" width="28" alt=""> | [`wrenfield-data--website-contact-scraper`](https://apify.com/wrenfield-data/website-contact-scraper?fpr=qx6tzs) | Emails, phone numbers and social profiles from a list of company websites, one row per site | $0.004 per website with contacts ($4.00 / 1,000) |
+<!-- END:table:company-data -->
+
+<!-- BEGIN:soon:company-data -->
+<!-- END:soon:company-data -->
 
 ### More Wrenfield Data Actors
 

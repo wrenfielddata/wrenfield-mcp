@@ -3,7 +3,7 @@
   "name": "io.github.wrenfielddata/local-leads",
   "title": "Wrenfield Local Leads",
   "description": "Company data for AI agents: domain to company, name to domain, enrichment, contacts, tech stack.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "websiteUrl": "https://wrenfielddata.com",
   "repository": {
     "url": "https://github.com/wrenfielddata/wrenfield-mcp",

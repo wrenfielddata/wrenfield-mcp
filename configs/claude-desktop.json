@@ -35,6 +35,18 @@
       "env": {
         "APIFY_TOKEN": "<YOUR_APIFY_TOKEN>"
       }
+    },
+    "wrenfield-company-data": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server@latest",
+        "--tools",
+        "wrenfield-data/company-name-to-domain,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/website-tech-stack-detector,wrenfield-data/website-contact-scraper"
+      ],
+      "env": {
+        "APIFY_TOKEN": "<YOUR_APIFY_TOKEN>"
+      }
     }
   }
 }

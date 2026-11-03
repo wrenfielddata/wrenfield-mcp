@@ -28,6 +28,13 @@
       "headers": {
         "Authorization": "Bearer ${input:apify-token}"
       }
+    },
+    "wrenfield-company-data": {
+      "type": "http",
+      "url": "https://mcp.apify.com?tools=wrenfield-data/company-name-to-domain,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/website-tech-stack-detector,wrenfield-data/website-contact-scraper",
+      "headers": {
+        "Authorization": "Bearer ${input:apify-token}"
+      }
     }
   }
 }
