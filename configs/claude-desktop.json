@@ -30,7 +30,7 @@
         "-y",
         "@apify/actors-mcp-server@latest",
         "--tools",
-        "wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/company-name-to-domain,wrenfield-data/businesses-without-websites,wrenfield-data/google-maps-grid-rank-tracker,wrenfield-data/bulk-pagespeed-checker"
+        "wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/company-name-to-domain,wrenfield-data/businesses-without-websites,wrenfield-data/google-maps-grid-rank-tracker,wrenfield-data/bulk-pagespeed-checker"
       ],
       "env": {
         "APIFY_TOKEN": "<YOUR_APIFY_TOKEN>"
