@@ -38,3 +38,5 @@ Do not clone, build or run anything from this repository.
 
 If the agent only needs keyword search volume, it can skip MCP and call the warm HTTP API directly:
 `GET https://wrenfield-data--keyword-search-volume.apify.actor/volume?keywords=a,b&location=United%20States` with header `Authorization: Bearer <APIFY_TOKEN>`. It answers in under a second and charges the same per-event prices as a normal run.
+
+Company domain the same way: `GET https://wrenfield-data--company-name-to-domain.apify.actor/domain?name=<company>` with the same header. It returns the verified official domain and confidence.

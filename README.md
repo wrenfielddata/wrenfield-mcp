@@ -309,6 +309,8 @@ curl -s "https://wrenfield-data--keyword-search-volume.apify.actor/volume?keywor
 
 The response is `{"items": [...], "summary": {...}, "elapsedMs": ...}`. `400`, `429` and `503` responses are never charged. The OpenAPI spec is in the Actor's **Server** tab on Apify.
 
+**Instant company domain lookup.** Company Name to Domain has the same kind of warm endpoint: `GET https://wrenfield-data--company-name-to-domain.apify.actor/domain?name=Stripe` (or `?companies=a,b&country=DE`, up to 50) returns the verified official domain, confidence, LinkedIn and logo. A fresh lookup takes about 1–10 s (the homepage is checked live), and a repeat takes about 0.5 s. It is charged per resolved company, like a normal run.
+
 ```python
 import os, requests
 
