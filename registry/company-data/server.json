@@ -3,7 +3,7 @@
   "name": "io.github.wrenfielddata/company-data",
   "title": "Wrenfield Company Data",
   "description": "Verified company lookup: name to domain, domain or email to company, firmographics, tech stack.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "websiteUrl": "https://wrenfielddata.com",
   "repository": {
     "url": "https://github.com/wrenfielddata/wrenfield-mcp",

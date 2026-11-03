@@ -3,7 +3,7 @@
   "name": "io.github.wrenfielddata/local-leads",
   "title": "Wrenfield Local Leads",
   "description": "Company data for AI agents: domain to company, name to domain, enrichment, contacts, tech stack.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "websiteUrl": "https://wrenfielddata.com",
   "repository": {
     "url": "https://github.com/wrenfielddata/wrenfield-mcp",
@@ -22,7 +22,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.apify.com?tools=wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/company-name-to-domain,wrenfield-data/businesses-without-websites,wrenfield-data/google-maps-grid-rank-tracker,wrenfield-data/bulk-pagespeed-checker",
+      "url": "https://mcp.apify.com?tools=wrenfield-data/local-keyword-demand,wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/company-name-to-domain,wrenfield-data/businesses-without-websites,wrenfield-data/google-maps-grid-rank-tracker,wrenfield-data/bulk-pagespeed-checker",
       "headers": [
         {
           "name": "Authorization",
@@ -37,6 +37,7 @@
     "io.modelcontextprotocol.registry/publisher-provided": {
       "host": "Apify MCP server (mcp.apify.com)",
       "tools": [
+        "wrenfield-data--local-keyword-demand",
         "wrenfield-data--website-contact-scraper",
         "wrenfield-data--website-tech-stack-detector",
         "wrenfield-data--domain-to-company",
@@ -48,6 +49,7 @@
       ],
       "pricing": "Pay per result on Apify; no subscription",
       "apifyStore": [
+        "https://apify.com/wrenfield-data/local-keyword-demand",
         "https://apify.com/wrenfield-data/website-contact-scraper",
         "https://apify.com/wrenfield-data/website-tech-stack-detector",
         "https://apify.com/wrenfield-data/domain-to-company",

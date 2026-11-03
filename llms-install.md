@@ -4,9 +4,9 @@ These are **remote** MCP servers hosted on the Apify MCP server (`mcp.apify.com`
 Do not clone, build or run anything from this repository.
 
 1. Ask the user which server they want. All three can be added side by side:
-   - **Wrenfield SEO Data** (`wrenfield-seo`): `https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/ai-search-volume-checker,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper,wrenfield-data/keyword-gap-report,wrenfield-data/bulk-pagespeed-checker,wrenfield-data/amazon-keyword-research`
+   - **Wrenfield SEO Data** (`wrenfield-seo`): `https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/ai-search-volume-checker,wrenfield-data/keyword-demand-by-country,wrenfield-data/local-keyword-demand,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper,wrenfield-data/keyword-gap-report,wrenfield-data/bulk-pagespeed-checker,wrenfield-data/amazon-keyword-research`
    - **Wrenfield AI Search Visibility** (`wrenfield-ai-search`): `https://mcp.apify.com?tools=wrenfield-data/ai-search-visibility-tracker,wrenfield-data/keyword-search-volume,wrenfield-data/ai-search-volume-checker,wrenfield-data/people-also-ask-scraper,wrenfield-data/ai-answer-scraper,wrenfield-data/agency-ai-visibility-reports`
-   - **Wrenfield Local Leads** (`wrenfield-leads`): `https://mcp.apify.com?tools=wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/company-name-to-domain,wrenfield-data/businesses-without-websites,wrenfield-data/google-maps-grid-rank-tracker,wrenfield-data/bulk-pagespeed-checker`
+   - **Wrenfield Local Leads** (`wrenfield-leads`): `https://mcp.apify.com?tools=wrenfield-data/local-keyword-demand,wrenfield-data/website-contact-scraper,wrenfield-data/website-tech-stack-detector,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/company-name-to-domain,wrenfield-data/businesses-without-websites,wrenfield-data/google-maps-grid-rank-tracker,wrenfield-data/bulk-pagespeed-checker`
    - **Wrenfield Company Data** (`wrenfield-company-data`): `https://mcp.apify.com?tools=wrenfield-data/company-name-to-domain,wrenfield-data/domain-to-company,wrenfield-data/company-enrichment,wrenfield-data/website-tech-stack-detector,wrenfield-data/website-contact-scraper`
 2. Authentication: if the client supports remote MCP OAuth, add only the URL and the user signs in to Apify in the browser.
    Otherwise ask the user for an Apify API token (Apify Console > Settings > API & Integrations) and send it as
@@ -17,7 +17,7 @@ Do not clone, build or run anything from this repository.
 {
   "mcpServers": {
     "wrenfield-seo": {
-      "url": "https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/ai-search-volume-checker,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper,wrenfield-data/keyword-gap-report,wrenfield-data/bulk-pagespeed-checker,wrenfield-data/amazon-keyword-research",
+      "url": "https://mcp.apify.com?tools=wrenfield-data/keyword-search-volume,wrenfield-data/ai-search-volume-checker,wrenfield-data/keyword-demand-by-country,wrenfield-data/local-keyword-demand,wrenfield-data/domain-authority-traffic-checker,wrenfield-data/google-trends-scraper,wrenfield-data/google-ads-transparency-scraper,wrenfield-data/competitor-keywords,wrenfield-data/keyword-difficulty-checker,wrenfield-data/keyword-research-tool,wrenfield-data/seo-toolkit,wrenfield-data/google-autocomplete-keyword-expander,wrenfield-data/people-also-ask-scraper,wrenfield-data/keyword-gap-report,wrenfield-data/bulk-pagespeed-checker,wrenfield-data/amazon-keyword-research",
       "headers": { "Authorization": "Bearer <APIFY_TOKEN>" }
     }
   }
@@ -25,7 +25,7 @@ Do not clone, build or run anything from this repository.
 ```
 
    For Cline, add `"type": "streamableHttp"` next to `url`. Ready-made files for other clients are in `configs/`.
-4. Verify by listing tools. Expect `wrenfield-data--keyword-search-volume`, `wrenfield-data--ai-search-volume-checker`, `wrenfield-data--domain-authority-traffic-checker`, `wrenfield-data--google-trends-scraper`, `wrenfield-data--google-ads-transparency-scraper`, `wrenfield-data--competitor-keywords`, `wrenfield-data--keyword-difficulty-checker`, `wrenfield-data--keyword-research-tool`, `wrenfield-data--seo-toolkit`, `wrenfield-data--google-autocomplete-keyword-expander`, `wrenfield-data--people-also-ask-scraper`, `wrenfield-data--keyword-gap-report`, `wrenfield-data--bulk-pagespeed-checker`, `wrenfield-data--amazon-keyword-research`
+4. Verify by listing tools. Expect `wrenfield-data--keyword-search-volume`, `wrenfield-data--ai-search-volume-checker`, `wrenfield-data--keyword-demand-by-country`, `wrenfield-data--local-keyword-demand`, `wrenfield-data--domain-authority-traffic-checker`, `wrenfield-data--google-trends-scraper`, `wrenfield-data--google-ads-transparency-scraper`, `wrenfield-data--competitor-keywords`, `wrenfield-data--keyword-difficulty-checker`, `wrenfield-data--keyword-research-tool`, `wrenfield-data--seo-toolkit`, `wrenfield-data--google-autocomplete-keyword-expander`, `wrenfield-data--people-also-ask-scraper`, `wrenfield-data--keyword-gap-report`, `wrenfield-data--bulk-pagespeed-checker`, `wrenfield-data--amazon-keyword-research`
    plus Apify helper tools (`get-actor-run`, `get-dataset-items`, `get-key-value-store-record`, `abort-actor-run`).
 5. Every tool call is billed per result to the user's Apify account. Ask before large runs. The per-Actor
    tools above take only the Actor input and have no spend-cap argument. To cap the spend of a single run,
@@ -33,10 +33,3 @@ Do not clone, build or run anything from this repository.
    `callOptions.maxTotalChargeUsd`. `call-actor` returns the run status and dataset ID; read the rows with
    `get-dataset-items`.
 6. HTTP 401 means the token is missing or invalid.
-
-## Fast path for keyword volume (optional)
-
-If the agent only needs keyword search volume, it can skip MCP and call the warm HTTP API directly:
-`GET https://wrenfield-data--keyword-search-volume.apify.actor/volume?keywords=a,b&location=United%20States` with header `Authorization: Bearer <APIFY_TOKEN>`. It answers in under a second and charges the same per-event prices as a normal run.
-
-Company domain the same way: `GET https://wrenfield-data--company-name-to-domain.apify.actor/domain?name=<company>` with the same header. It returns the verified official domain and confidence.

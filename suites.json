@@ -1,5 +1,5 @@
 {
-  "version": "1.0.7",
+  "version": "1.0.8",
   "apify_fpr": "qx6tzs",
   "owner": "wrenfield-data",
   "mcpBase": "https://mcp.apify.com",
@@ -17,6 +17,8 @@
       "tools": [
         "keyword-search-volume",
         "ai-search-volume-checker",
+        "keyword-demand-by-country",
+        "local-keyword-demand",
         "domain-authority-traffic-checker",
         "google-trends-scraper",
         "google-ads-transparency-scraper",
@@ -61,6 +63,7 @@
       "description": "Company data for AI agents: domain to company, name to domain, enrichment, contacts, tech stack.",
       "icon": "google-maps-grid-rank-tracker",
       "tools": [
+        "local-keyword-demand",
         "website-contact-scraper",
         "website-tech-stack-detector",
         "domain-to-company",
@@ -136,6 +139,8 @@
     "keyword-gap-report": "Keywords up to 3 competitors rank for and a domain doesn't: volume, KD, intent, competing URLs and reasons, top 20 re-checked on live Google ($9 per report)",
     "domain-to-company": "Company behind each domain, URL or work email: name, country, industry, employees, founded year, LinkedIn, logo, live/parked check",
     "company-enrichment": "One row per domain: company facts, public emails and phones, socials, tech stack and AI-crawler readiness",
-    "ai-search-volume-checker": "Estimated monthly AI search volume (ChatGPT and Google AI) per keyword, with 12-month history and a rising/falling trend, 90+ countries"
+    "ai-search-volume-checker": "Estimated monthly AI search volume (ChatGPT and Google AI) per keyword, with 12-month history and a rising/falling trend, 90+ countries",
+    "keyword-demand-by-country": "One keyword list checked in up to 94 countries at once: volume, CPC, difficulty, trend per country, markets ranked and best market per keyword",
+    "local-keyword-demand": "Local service demand city by city from live Keyword Planner: searches, CPC and top-of-page bids for near-me and city keywords, cities ranked"
   }
 }
