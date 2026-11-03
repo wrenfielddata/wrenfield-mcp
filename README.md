@@ -299,6 +299,16 @@ curl -s -X POST \
   -d '{"keywords": ["crm software", "free crm"], "location": "United States", "language": "English"}'
 ```
 
+**Instant keyword volume (no run to start).** Keyword Search Volume also runs as a warm HTTP API (Apify Standby). Agents and n8n/Make/Zapier HTTP nodes can call it directly and get rows back in under a second when warm (0.5–0.8 s measured Nov 3, 2026). Prices are the same as a normal run:
+
+```bash
+curl -s "https://wrenfield-data--keyword-search-volume.apify.actor/volume?keywords=crm%20software,free%20crm&location=United%20States" \
+  -H "Authorization: Bearer $APIFY_TOKEN"
+# also: GET /ideas?keywords=seed&maxIdeas=50 · POST / with the normal input JSON · GET / for usage
+```
+
+The response is `{"items": [...], "summary": {...}, "elapsedMs": ...}`. `400`, `429` and `503` responses are never charged. The OpenAPI spec is in the Actor's **Server** tab on Apify.
+
 ```python
 import os, requests
 

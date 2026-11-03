@@ -33,3 +33,8 @@ Do not clone, build or run anything from this repository.
    `callOptions.maxTotalChargeUsd`. `call-actor` returns the run status and dataset ID; read the rows with
    `get-dataset-items`.
 6. HTTP 401 means the token is missing or invalid.
+
+## Fast path for keyword volume (optional)
+
+If the agent only needs keyword search volume, it can skip MCP and call the warm HTTP API directly:
+`GET https://wrenfield-data--keyword-search-volume.apify.actor/volume?keywords=a,b&location=United%20States` with header `Authorization: Bearer <APIFY_TOKEN>`. It answers in under a second and charges the same per-event prices as a normal run.
